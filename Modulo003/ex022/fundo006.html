@@ -6,13 +6,30 @@
     <title>Document</title>
     <style>
         body {
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
+            background-repeat: no-repeat;
+
+            /* -- Melhor maneira de preencher o fundo do site
+                --- Mas ainda sim, com o tamanho do monitor pode dar espaços pretos */
+           
+                /* background-size: 100%; */
+
+            background-size: cover; /*Vai cobrir sozinho as dimensões mas tem limitações*/
+            background-attachment: fixed; /* Imagem fica grudada*/
+            
+            /*  Shorthand - background
+                color > image > position > repeat > [size] 
+                > attachement -- So funciona com o size fora!
+                 */ 
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin:auto;
             border:1px solid darkblue;
@@ -24,7 +41,16 @@
 <body>
     <main>
         <h1> Teste de imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laudantium vero natus quidem minus culpa beatae repudiandae corporis cum voluptatibus. Esse accusantium eveniet fuga suscipit doloribus laborum a incidunt deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum eaque iusto tenetur voluptate numquam sapiente fugiat saepe eius eum, error autem odio, cum cumque fuga tempora corrupti facilis ipsum reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos debitis excepturi impedit repellat animi optio, quas ipsam vero minus, itaque dolore. Non sapiente suscipit tempore vel excepturi harum doloribus sit.
+        </p>
     </main>
 </body>
 </html>
