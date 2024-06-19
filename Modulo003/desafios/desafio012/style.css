@@ -71,6 +71,7 @@ section.imagem {
     color:white;
     box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.586);
     background-size: cover;
+    /* O que faz a imagem ficar fixa */
     background-attachment:fixed 
 }
 
