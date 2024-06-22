@@ -13,23 +13,31 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
-
-        td,th {
+        
+        th,td {
             border: 1px solid black;
             padding: 10px;
-            
+        
         }
-
+        
         thead,tfoot {
-            background-color: grey;
+            background-color: rgb(5, 5, 5);
             color: white;
         }
 
-        tfoot {
-
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
         }
 
+        tbody >tr:nth-child(3n) {
+            background-color: rgb(124, 124, 124);
+
+        }
+      
 
     </style>
 </head>
@@ -50,11 +58,144 @@
         <caption>Cidades Brasileiras por População</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Geraus</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Geraus</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+
+             <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Geraus</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238 	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524 </td>
+            </tr>
             <tr>
                 <td>São Paulo</td>
                 <td>44 411 238 	</td>
@@ -71,8 +212,8 @@
         </tbody>
         <tfoot>
             <tr> 
-                <th>Total de Habitantes</th>
-                <td>00000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td>100000</td>
             </tr>
         </tfoot>
     </table>
