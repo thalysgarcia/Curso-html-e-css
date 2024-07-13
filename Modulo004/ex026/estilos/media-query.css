@@ -1,0 +1,83 @@
+@charset "UFT-8";
+
+/* Todas as demais mídias */
+
+/*Typical Device BreakPoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px*/
+
+@media print {
+    body {
+        /* Impressora não imprimi backgrouns --> Desnecessário */
+        background-image: url(../imagens/back-print.jpg);  
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+
+    main::after {
+        content: 'Esse projeto foi feito por Thalys Garcia';
+        text-decoration: overline;
+        font-size: 1em;
+    }    
+
+    main {
+        border: 2px solid black;
+    }
+    
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: block;}
+    img#pc {display: none;}
+    img#tv {display: none}
+
+
+}
+
+/* Não preciso fazer a configuração para celular pois já estou usando o mobile first! */
+
+@media screen and  (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: block;}
+    img#print { display: none;}
+    img#pc {display: none;}
+    img#tv {display: none}
+}
+    
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc {display: block;}
+    img#tv {display: none}
+    
+}
+
+@media screen and (min-width:1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+       
+    }
+    
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc {display: none;}
+    img#tv {display: block}
+    
+}
