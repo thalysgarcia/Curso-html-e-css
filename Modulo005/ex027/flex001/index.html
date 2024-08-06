@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Boz</title>
+    <style> 
+        div.conteiner {
+            
+                background-color: red;
+                /* PAI - Leva a configuração BASE */
+                display: flex;
+        }
+
+        div.item {
+                background-color: grey;
+                border: 1px solid;
+                /* FILHO */
+                flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div> 
+        <div class="item">C</div>     
+        <div class="item">D</div> 
+        <div class="item">E</div> 
+        <div class="item">F</div> 
+        <div class="item">G</div> 
+    </div>
+</body>
+</html>
+
+
+<!-- 
+
+    FLEX DIRECTION
+    -> flex-direction: row -- ESQUERDA PARA A DIREITA 
+    -> flex-direction: row-reverse -- DIREITA PARA ESQUERDA
+
+    -> flex-direction: column; -- DE CIMA PARA BAIXO
+    -> flex-direction: column-revers; DE BAIXO PARA CIMA
+
+    EIXOS (axis)
+
+
+-->
